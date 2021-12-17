@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Site</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <!-- fontawesom -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+    <div class="col-md-10 col-11 mx-auto">
+     <div class="row mt-5 gx-3">
+         <div class="col-md-12 col-lg-8 col-11 mx-auto main-cart mb-lg-0 mb-5">
+          <div class="card p-4">
+              <h2 class="py-5 font-weight-bold">Card (2 Items)</h2>
+              <div class="row">
+                <div class="col-md-5 col-11 d-flex justify-content-center align-items-center bg-light shadow">
+                 <img src="https://i.pinimg.com/originals/bd/ef/cb/bdefcbc72735f64db17f3250b1e64245.png" alt="cart-img" class="img-fluid">
+                </div>
+                <!-- //product-deatils -->
+                <div class="col-md-7 col-11 mx-auto px-4 mt-2">
+                    <div class="row">
+                        <div class="col-5">
+                            <div class="product-deatils ">
+                                <h4>Orange Shirt</h4>
+                                 <p>Shirt blue</p>
+                                 <p>Color Orange</p>
+                                 <p>Size -M</p>
+                            </div>
+                        </div>
+                        <div class="col-7">
+                            <div class="increas-area d-flex justify-content-center">
+                               <button onclick="decreament('itembox','money')"> <i class="fas fa-minus common" ></i></button>
+                                <input type="text" id="itembox" value="0"  class="w-25">
+                               <button onclick="increament('itembox','money')"> <i class="fas fa-plus common" ></i></button>
+    
+                            </div>
+                        </div>
+                    </div>
+                   <div class="row">
+                       <div class="col-8 d-flex justify-content-between">
+                       <p> <i class="fas fa-trash-restore"></i>Remove Item</p>
+                        <p><i class="fas fa-heart"></i>Move wish</p>
+                        </div>
+                       <div class="col-4 d-flex justify-content-end">
+                           <h4 >$<span id='money'>00</span></h4>
+                       </div>
+                   </div>
+                </div>
+            </div>
+          </div>
+          <!-- secoun-item -->
+
+          <div class="card p-4">
+                
+            <div class="row">
+              <div class="col-md-5 col-11 d-flex justify-content-center align-items-center bg-light shadow">
+               <img src="https://e7.pngegg.com/pngimages/598/287/png-clipart-black-crew-neck-t-shirt-t-shirt-clothing-crew-neck-matchesfashion-com-t-shirts-tshirt-angle.png" alt="cart-img" class="img-fluid">
+              </div>
+              <!-- //product-deatils -->
+              <div class="col-md-7 col-11 mx-auto px-4 mt-2">
+                  <div class="row">
+                      <div class="col-5">
+                          <div class="product-deatils ">
+                              <h4>Black Shirt</h4>
+                               <p>Shirt blue</p>
+                               <p>Color Orange</p>
+                               <p>Size -M</p>
+                          </div>
+                      </div>
+                      <div class="col-7">
+                          <div class="increas-area d-flex justify-content-center">
+                              <button onclick="decreament('input-value','money2')"><i class="fas fa-minus common"></i></button>
+                              <input type="text" value="0" id="input-value" class="form-control w-25 h-25">
+                              <button onclick="increament('input-value','money2')"><i class="fas fa-plus common" ></i></button>
+  
+                          </div>
+                      </div>
+                  </div>
+                 <div class="row">
+                     <div class="col-8 d-flex justify-content-between">
+                     <p> <i class="fas fa-trash-restore"></i>Remove Item</p>
+                      <p><i class="fas fa-heart"></i>Move wish</p>
+                      </div>
+                     <div class="col-4 d-flex justify-content-end">
+                         <h4 >$<span id='money2'>00</span></h4>
+                     </div>
+                 </div>
+              </div>
+          </div>
+       
+        
+       </div>
+
+         </div>
+
+         
+        
+           <!-- right-side -->
+           <div class="col-md-12 col-lg-4 col-11 mx-auto bg-light shadow">
+              <div class="right-side p-3">
+          <h5 class="p-1">The name of Product</h5>
+             <div class="price-indiv d-flex justify-content-between">
+                 <p>product amount</p>
+                 <p>$<span id="pd-amount">00</span></p>
+             </div>
+             <div class="price-indiv d-flex justify-content-between">
+                <p>shipping charge</p>
+                <p>$<span id="shiping-charge">50</span></p>
+            </div>
+             <hr/>
+             <div class="price-indiv d-flex justify-content-between">
+                <p>The Total amount inc.(vat)</p>
+                <p>$<span id="total-card">0</span></p>
+            </div>
+            <a class="btn btn-outline-primary" href="#" role="button" id="checkout"> Checkout</a>
+            <h1 id="complete"></h1>
+              </div>
+
+              <!-- discount code part -->
+<div class="discount_code mt-3 shadow">
+    <div class="card">
+    <div class="card-body">
+    <a class="d-flex justify-content-between" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    Add a discount code (optional)
+    <span><i class="fas fa-chevron-down pt-1"></i></span>
+    </a>
+    <div class="collapse" id="collapseExample">
+    <div class="mt-3">
+    <input type="text" name="" id="discount_code1" class="form-control font-weight-bold" placeholder="Enter the discount code">
+    <small id="error_trw" class="text-dark mt-3">copun is build(1 once time use)</small>
+    </div>
+    <button class="btn btn-primary btn-sm mt-3" onclick="discount_code()">Apply</button>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="mt-3 shadow p-3 bg-white">
+        <div class="pt-4">
+        <h5 class="mb-4">Expected delivery date</h5>
+        <p>July 27th 2020 - July 29th 2020</p>
+        </div>
+        </div>
+        
+           </div>
+     </div>
+    </div>
+    </div>
+
+</div>
+<script src="index.js"></script>
+</body>
+</html>

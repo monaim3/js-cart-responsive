@@ -1,0 +1,24 @@
+*{
+     margin:0;
+     padding: 0;
+     box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    font-weight: 700;
+}
+.common{
+    
+    
+    padding: 0px 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button:hover{
+    background-color: #172774;
+    color:#fff;
+}
+i.fas.fa-heart:hover {
+    color: rgb(218, 41, 41);
+}
